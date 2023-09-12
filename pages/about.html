@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <script src="https://kit.fontawesome.com/8929fadb5a.js" crossorigin="anonymous"></script>
+    <script src="../static/js/script.js"></script>
+    <title>About me</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        changeClassAnimation();
+        stickyNavbar();
+        hoverIcon();
+        mobileMenu();
+        // Appel pour la section MMI
+        setupSection("i.for-mobile.mmi-info", "div.description-school-mobile.mmi-info", "div.description-school-mobile.mmi-info > i");
+
+// Appel pour la section Comen
+        setupSection("i.for-mobile.comen-info", "div.description-school-mobile.comen-info", "div.description-school-mobile.comen-info > i");
+
+// Appel pour la section Informatique
+        setupSection("i.for-mobile.info-info", "div.description-school-mobile.info-info", "div.description-school-mobile.info-info > i");
+
+        // Appel pour la section SEPTA
+        setupSection("i.for-mobile.septa-info", "div.description-school-mobile.septa-info", "div.description-school-mobile.septa-info > i");
+
+    });
+</script>
+
+<nav id="navbar" class="">
+    <a href="../index.html" class="website_logo">
+        <img src="../static/images/Logo_Elmir.png" alt="">
+    </a>
+    <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="#contact" class="button_hire glow-on-hover">Contactez-moi !</a></li>
+    </ul>
+</nav>
+
+<nav id="mobile-nav">
+    <a href="../index.html" class="website_logo">
+        <img src="../static/images/Logo_Elmir.png" alt="Logo de Elmir GEROVIC">
+    </a>
+    <button class="menu"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu">
+        <svg width="70" height="70" viewBox="0 0 100 100">
+            <path class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+            <path class="line line2" d="M 20,50 H 80"/>
+            <path class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
+        </svg>
+    </button>
+    <ul class="hidden menu-fullscreen">
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="about.html">À Propos</a></li>
+        <li><a href="#contact" class="button_hire glow-on-hover">Contactez-moi !</a></li>
+    </ul>
+</nav>
+
+<!-- Ici se trouve le contenu de la page-->
+<div class="title">
+    <h1>About me</h1>
+    <h2>Si vous voulez en apprendre plus sur moi, vous êtes au bon endroit 😉.</h2>
+    <hr class="inpage">
+    <p class="about-me">
+        Pour faire simple, je suis actuellement <b>étudiant en deuxième année</b> du <b>BUT (Bachelor Universitaire et
+        Technologique) Informatique</b> à l'<b>IUT de Belfort</b>. Passionné par les <b>jeux vidéo</b> depuis mon
+        enfance, je me suis toujours interrogé sur leur réalisation, ce qui m'a motivé à entreprendre des études en <b>informatique</b>.
+        Cependant, j'ai rapidement découvert que le <b>développement</b> ne se limitait pas aux <b>jeux vidéo</b> et que
+        le champ des <b>projets</b> réalisables était aussi vaste que l'<b>imagination</b>.
+    </p>
+    <p class="about-me">
+        Actuellement, je suis à la recherche d'un <b>stage en développement</b> ou en <b>data</b>, car je suis convaincu
+        qu'une expérience professionnelle enrichissante me permettra de me <b>perfectionner</b> et de réaliser des <b>projets</b>
+        toujours plus intéressants. J'aspire à mettre en pratique mes <b>compétences</b> acquises tout en continuant à
+        en <b>apprendre davantage</b>.
+    </p>
+    <p class="about-me">
+        En parallèle de ma passion pour le <b>développement</b>, j'ai également développé un intérêt pour
+        l'<b>écriture</b>. Écrire des <b>articles</b> me permet de partager mes <b>idées</b>, mes <b>découvertes</b> et
+        mes <b>connaissances</b> avec le monde entier. Je suis convaincu que le <b>partage de savoirs</b> est essentiel,
+        et je souhaite ainsi contribuer à la <b>communauté</b> en apportant mon <b>point de vue</b> et mes <b>expériences</b>.
+    </p>
+    <p class="about-me">
+        Je suis ouvert aux <b>opportunités collaboratives</b> et aux <b>défis</b> qui me permettront de progresser en
+        tant que <b>développeur</b>. N'hésitez pas à explorer mon <b>portfolio</b> pour découvrir mes
+        <b>réalisations</b> et mes <b>articles</b>. Au plaisir de <b>collaborer</b> avec vous !
+    </p>
+
+</div>
+
+<hr class="inpage">
+
+<div class="formations">
+    <h3>Mes formations</h3>
+    <p>Voici un petit historique des formations que j'ai suivi !</p>
+    <div class="history">
+        <div class="line">
+            <span class="line"></span>
+            <i class="fa-solid fa-school"></i>
+        </div>
+        <div class="school-info">
+            <h5>DUT MMI (Métiers du Multimédia et de l'Internet)</h5>
+            <span>2019-2021</span>
+            <img src="../static/images/logo_mmi_montbeliard.png"
+                 alt="Logo du DUT Métiers du Multimédia et de l'Internet de Montbéliard">
+            <i class="fa-solid fa-circle-info for-mobile mmi-info"></i>
+        </div>
+        <p class="description-school">
+            C'est une formation qui propose un cursus qui permet d'acquérir des aptitudes en <b>conception web</b>, <b>graphisme</b>,
+            <b>vidéo</b>, <b>développement d'applications interactives</b> et <b>gestion de projets numériques</b>.
+        </p>
+        <div class="description-school-mobile mmi-info HiddenTextBox">
+            <i class="fa-solid fa-xmark mmi-info"></i>
+            <p>
+                C'est une formation qui propose un cursus qui permet d'acquérir des aptitudes en <b>conception web</b>,
+                <b>graphisme</b>, <b>vidéo</b>, <b>développement d'applications interactives</b> et <b>gestion de
+                projets numériques</b>.
+            </p>
+        </div>
+        <div class="line">
+            <span class="line"></span>
+            <i class="fa-solid fa-school"></i>
+        </div>
+        <div class="school-info">
+            <h5>Licence Professionnelle COMEN (COmmunication et Médiations Numériques)</h5>
+            <span>2021-2022</span>
+            <img src="../static/images/lp_comen_logo_small.png"
+                 alt="Logo de la licence professionnelle de COmmunication et Médiations Numériques de Dijon">
+            <i class="fa-solid fa-circle-info for-mobile comen-info"></i>
+        </div>
+        <p class="description-school">
+            Cette licence est une formation spécialisée dans les métiers de la <b>communication digitale</b>. Elle
+            permet
+            d'acquérir des compétences clés en <b>communication</b>, <b>marketing digital</b>, <b>création de contenus
+            multimédias</b>,
+            <b>gestion de projets numériques</b>, et utilisation des <b>technologies de l'information et de la
+            communication</b>. Ils
+            apprennent également à maîtriser les outils et les plateformes numériques indispensables à la <b>diffusion
+            de
+            messages efficaces et percutants</b>.
+        </p>
+        <div class="description-school-mobile comen-info HiddenTextBox">
+            <i class="fa-solid fa-xmark comen-info"></i>
+            <p>
+                Cette licence est une formation spécialisée dans les métiers de la <b>communication digitale</b>. Elle
+                permet
+                d'acquérir des compétences clés en <b>communication</b>, <b>marketing digital</b>, <b>création de
+                contenus multimédias</b>,
+                <b>gestion de projets numériques</b>, et utilisation des <b>technologies de l'information et de la
+                communication</b>. Ils
+                apprennent également à maîtriser les outils et les plateformes numériques indispensables à la <b>diffusion
+                de
+                messages efficaces et percutants</b>.
+            </p>
+        </div>
+        <div class="line">
+            <span class="line"></span>
+            <i class="fa-solid fa-school"></i>
+        </div>
+        <div class="school-info">
+            <h5>BUT Informatique</h5>
+            <span>2022-202?</span>
+            <img src="../static/images/but_informatique_logo_small.png" alt="Logo du BUT Informatique de Belfort">
+            <i class="fa-solid fa-circle-info for-mobile info-info"></i>
+        </div>
+        <p class="description-school">
+            Cette formation vise à doter les étudiants des compétences en <b>développement de logiciels</b>, <b>programmation</b>,
+            <b>bases de données</b>, <b>réseaux</b>, <b>intelligence artificielle</b>, et bien d'autres domaines
+            connexes. Ils ont également l'occasion de travailler sur des projets concrets, ce qui leur permet de mettre
+            en pratique leurs connaissances et de développer leur esprit d'analyse et de résolution de problèmes.
+        </p>
+        <div class="description-school-mobile info-info HiddenTextBox">
+            <i class="fa-solid fa-xmark info-info"></i>
+            <p>
+                Cette formation vise à doter les étudiants des compétences en <b>développement de logiciels</b>, <b>programmation</b>,
+                <b>bases de données</b>, <b>réseaux</b>, <b>intelligence artificielle</b>, et bien d'autres domaines
+                connexes. Ils ont également l'occasion de travailler sur des projets concrets, ce qui leur permet de
+                mettre
+                en pratique leurs connaissances et de développer leur esprit d'analyse et de résolution de problèmes.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<hr class="inpage">
+
+<div class="experiences">
+    <h3>Expériences</h3>
+    <p>Toutes les expériences professionnelles de ma carrière.</p>
+    <div class="history">
+        <div class="line">
+            <span class="line"></span>
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="school-info">
+            <h5>Chargé de communication | SEPT-A</h5>
+            <span>Avril 2021 à Juin 2021 et Avril 2022 à Juin 2022</span>
+            <img src="../static/images/logo_small_septa.png" alt="">
+            <i class="fa-solid fa-circle-info for-mobile septa-info"></i>
+        </div>
+        <p class="description-school">
+            Une expérience extrêmement enrichissante qui m'a offert l'opportunité d'entrer dans le <b>domaine
+            professionnel</b>.
+            Pendant cette période, j'ai accompli une variété de tâches incluant du <b>community management</b>, de l'<b>emailing</b>,
+            la conception de <b>landing Pages</b>, l'élaboration de <b>plans de communication</b>, ainsi que la <b>rédaction
+            d'articles</b>.
+        </p>
+        <div class="description-school-mobile septa-info HiddenTextBox">
+            <i class="fa-solid fa-xmark septa-info"></i>
+            <p>
+                Une expérience extrêmement enrichissante qui m'a offert l'opportunité d'entrer dans le <b>domaine
+                professionnel</b>.
+                Pendant cette période, j'ai accompli une variété de tâches incluant du <b>community management</b>, de
+                l'<b>emailing</b>,
+                la conception de <b>landing Pages</b>, l'élaboration de <b>plans de communication</b>, ainsi que la <b>rédaction
+                d'articles</b>.
+            </p>
+        </div>
+    </div>
+</div>
+
+<hr class="inpage">
+
+<div class="competences">
+    <h3>Liste de mes compétences</h3>
+    <div class="container-competences">
+        <div class="com-column">
+            <h5>Communication</h5>
+            <ul>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/communaute%20(Petit).png"
+                             alt="Community Management">
+                        <div class="details back"><span class="title-icon">Community Management</span>
+                            <p>Gestion d'une communauté sur les réseaux.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/article%20(Petit).png"
+                             alt="Rédaction d'articles">
+                        <div class="details back"><span class="title-icon">Rédaction d'articles</span>
+                            <p>Rédaction d'articles pour le web.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/e-mail%20(Petit).png"
+                             alt="Rédactions de newsletters">
+                        <div class="details back"><span class="title-icon">Rédaction de newsletters</span>
+                            <p>Rédaction de newsletters personnalisées.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/adobe-premiere-pro-logo%20(Petit).png"
+                             alt="Montage Vidéo (Adobe Premiere Pro)">
+                        <div class="details back"><span class="title-icon">Montage Vidéo</span>
+                            <p>Montage vidéo simple.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="dev-front-column">
+            <h5>Développement Front-End</h5>
+            <ul>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/HTML5_logo%20(Petit).png" alt="HTML5">
+                        <div class="details back"><span class="title-icon">HTML5</span>
+                            <p>Réalisation de sites web en HTML5.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/css3_logo_small.png" alt="CSS3">
+                        <div class="details back"><span class="title-icon">CSS3</span>
+                            <p>Sites web responsive avec Flexbox et Grid</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/JavaScript-logo%20(Petit).png"
+                             alt="Javascript">
+                        <div class="details back"><span class="title-icon">Javascript</span>
+                            <p>Réalisation de sites web dynamiques.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/logo_bootstrap_small.png"
+                             alt="Bootstrap">
+                        <div class="details back bootstrap"><span class="title-icon">Bootstrap</span>
+                            <p>Réalisation rapide d'interface web.</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="display: none">
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/vuejs_logo%20(Petit).png" alt="Vue JS">
+                        <div class="details back"><span class="title-icon">Vue JS</span>
+                            <p>Apprentissage de ce framework.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/wordpress_logo%20(Petit).png"
+                             alt="WordPress">
+                        <div class="details back"><span class="title-icon">WordPress</span>
+                            <p>Création de thèmes WordPress.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="dev-back-column">
+            <h5>Développement Back-End</h5>
+            <ul>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/python_logo%20(Petit).png" alt="Python">
+                        <div class="details back python"><span class="title-icon">Python</span>
+                            <p>Réalisation de jeux, bots, intelligences artificielles.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/java-logo%20(Petit).png" alt="Java">
+                        <div class="details back"><span class="title-icon">Java</span>
+                            <p>Réalisation d'applications et autres.</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="display: none">
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/node_js_logo%20(Petit).png" alt="Node JS">
+                        <div class="details back"><span class="title-icon">Node JS</span>
+                            <p>Création d'API Rest.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-three-dimension">
+                        <img class="front" src="../static/images/competences/logo_mysql_small.png" alt="MySQL">
+                        <div class="details back"><span class="title-icon">MySQL</span>
+                            <p>Création de bases de données et requêtes.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<a href="../static/Elmir_Gerovic_CV_Informatique_Alternant.pdf" class="download button-animation button-a">Télécharger
+    mon CV <i class="fas fa-solid fa-download"></i></a>
+
+<hr>
+<footer id="contact">
+    <div class="footer-1">
+        <div class="links">
+            <div class="general-col">
+                <h5>Général</h5>
+                <ul class="general">
+                    <li><a href="../../index.html">Accueil</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../projects.html">Projets</a></li>
+                </ul>
+            </div>
+            <div class="extra-col">
+                <h5>Extra</h5>
+                <ul class="extra">
+                    <li><a href="../../static/Elmir_Gerovic_CV_Informatique_Alternant.pdf">Mon CV</a></li>
+                    <li><a href="../mentions_legales.html">Mentions légales</a></li>
+                    <li><a href="../politique_confidentialite.html">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <form>
+            <h5>Vous avez une question ?</h5>
+            <div class="subtitle">Contactez-moi tout de suite !</div>
+            <label for="firstname" style="display: none">Nom :</label>
+            <input id="firstname" class="input" type="text" placeholder="Entrez votre nom.">
+            <label for="mail" style="display: none">Email :</label>
+            <input id="mail" class="input" type="email" placeholder="Entrez votre mail.">
+            <label for="message" style="display: none">Message :</label>
+            <textarea id="message" class="input" placeholder="Entrez votre message. "></textarea>
+            <div class="agreement">
+                <input id="agree" type="checkbox">
+                <label for="agree">J'ai lu et j'accepte la <a href="../politique_confidentialite.html">politique de
+                    confidentialité</a> de ce site</label>
+            </div>
+            <button type="submit" class="submit button-animation" disabled>Submit <i
+                    class="fas fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+    <div class="footer-2">
+        <span>
+            © 2023 Elmir Gerovic
+        </span>
+        <ul class="social-medias">
+            <li><a href="https://www.linkedin.com/in/elmir-gerovic-851bb2197/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/elmir_gerovic/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/elmirge7" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

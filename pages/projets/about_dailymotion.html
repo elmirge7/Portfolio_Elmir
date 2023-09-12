@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/styles.css">
+    <link rel="stylesheet" href="../../static/css/responsive.css">
+    <script src="https://kit.fontawesome.com/8929fadb5a.js" crossorigin="anonymous"></script>
+    <script src="../../static/js/script.js"></script>
+    <title>Le projet "About Dailymotion"</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        changeClassAnimation();
+        stickyNavbar();
+        hoverIcon();
+        mobileMenu();
+    });
+</script>
+
+<nav id="navbar" class="">
+    <a href="../../index.html" class="website_logo">
+        <img src="../../static/images/Logo_Elmir.png" alt="">
+    </a>
+    <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../projects.html">Projets</a></li>
+        <li><a href="../about.html">À propos</a></li>
+        <li><a href="#contact" class="button_hire glow-on-hover">Contactez-moi !</a></li>
+    </ul>
+</nav>
+
+<nav id="mobile-nav">
+    <a href="../../index.html" class="website_logo">
+        <img src="../../static/images/Logo_Elmir.png" alt="Logo de Elmir GEROVIC">
+    </a>
+    <button class="menu"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu">
+        <svg width="70" height="70" viewBox="0 0 100 100">
+            <path class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+            <path class="line line2" d="M 20,50 H 80"/>
+            <path class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
+        </svg>
+    </button>
+    <ul class="hidden menu-fullscreen">
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../projects.html">Projets</a></li>
+        <li><a href="../about.html">À Propos</a></li>
+        <li><a href="#contact" class="button_hire glow-on-hover">Contactez-moi !</a></li>
+    </ul>
+</nav>
+
+
+<!-- Ici se trouve le contenu de la page-->
+<div class="banner-project">
+    <h1>About Dailymotion</h1>
+    <img src="../../static/images/images_projets/about_dailymotion_cover_title.jpg"
+         alt="">
+</div>
+
+<main class="container">
+    <p class="introduction">Réalisation en groupe d’un site vitrine responsive en HTML / CSS / JS qui présente
+        l’histoire de Dailymotion.</p>
+    <div class="presentation">
+        <div class="part-presentation">
+            <div class="text">
+                <h2>Introduction</h2>
+                <p>Dans le cadre de ce projet en groupe, nous devions recueillir les besoins d'un client pour concevoir
+                    une interface web en utilisant des langages tels que HTML, CSS et potentiellement JavaScript.
+                    En plus des aspects techniques, nous devions également prendre en compte les critères ergonomiques
+                    et esthétiques pour concevoir une interface conviviale et attractive pour l'utilisateur.
+                </p>
+            </div>
+            <img src="../../static/images/images_projets/about_dailymotion_title.png"
+                 alt="">
+        </div>
+        <div class="part-presentation">
+            <div class="text">
+                <h2>Développement Front-End</h2>
+                <p>Ce projet m’a donc permis de développer ses compétences en matière de développement front-end, de
+                    prendre en compte les besoins du client et les contraintes liées à l'utilisation de l'interface web
+                    sur différents types d'appareils. Mais aussi à apprendre à travailler en équipe.
+                    Cela m'a permis de mettre en pratique mes connaissances en matière de développement front-end.
+                    Pour la réalisation de ce projet, nous avons choisi d'utiliser les langages HTML, CSS et JavaScript.
+                    Nous avons conçu un site adapté pour les mobiles et autres types d'écrans en utilisant les media
+                    queries.
+                </p>
+            </div>
+            <img src="../../static/images/images_projets/about_dailymotion.jpg" alt="">
+        </div>
+        <div class="end-presentation">
+            <div class="text">
+                <h2>Outils utilisés</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS
+                        <ul>
+                            <li>Flexbox</li>
+                            <li>Media Queries</li>
+                        </ul>
+                    </li>
+                    <li>Javascript</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <a href="https://sae-grp19.github.io/dailymotion/" class="download button-animation" target="_blank">Accéder au
+            site <i
+                    class="fas fa-solid fa-arrow-up-right-from-squarep"></i></a>
+    </div>
+    <div class="buttons direction">
+        <a href="club_waterpolo_belfort.html"><i class="fa-solid fa-chevron-left"></i> Projet précédent</a>
+        <a href="quoridor.html"><i class="fa-solid fa-chevron-right icon-500px"></i> Projet suivant <i
+                class="fa-solid fa-chevron-right"></i></a>
+    </div>
+</main>
+
+
+<hr>
+<footer id="contact">
+    <div class="footer-1">
+        <div class="links">
+            <div class="general-col">
+                <h5>Général</h5>
+                <ul class="general">
+                    <li><a href="../../index.html">Accueil</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../projects.html">Projets</a></li>
+                </ul>
+            </div>
+            <div class="extra-col">
+                <h5>Extra</h5>
+                <ul class="extra">
+                    <li><a href="../../static/Elmir_Gerovic_CV_Informatique_Alternant.pdf">Mon CV</a></li>
+                    <li><a href="../mentions_legales.html">Mentions légales</a></li>
+                    <li><a href="../politique_confidentialite.html">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <form>
+            <h5>Vous avez une question ?</h5>
+            <div class="subtitle">Contactez-moi tout de suite !</div>
+            <label for="firstname" style="display: none">Nom :</label>
+            <input id="firstname" class="input" type="text" placeholder="Entrez votre nom.">
+            <label for="mail" style="display: none">Email :</label>
+            <input id="mail" class="input" type="email" placeholder="Entrez votre mail.">
+            <label for="message" style="display: none">Message :</label>
+            <textarea id="message" class="input" placeholder="Entrez votre message. "></textarea>
+            <div class="agreement">
+                <input id="agree" type="checkbox">
+                <label for="agree">J'ai lu et j'accepte la <a href="../politique_confidentialite.html">politique de
+                    confidentialité</a> de ce site</label>
+            </div>
+            <button type="submit" class="submit button-animation" disabled>Submit <i
+                    class="fas fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+    <div class="footer-2">
+        <span>
+            © 2023 Elmir Gerovic
+        </span>
+        <ul class="social-medias">
+            <li><a href="https://www.linkedin.com/in/elmir-gerovic-851bb2197/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/elmir_gerovic/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/elmirge7" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
