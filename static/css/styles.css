@@ -1617,8 +1617,8 @@ article {
     color: #E6E6E6;
 }
 
-article > a {
-    text-decoration: underline;
+article a {
+    text-decoration: underline !important;
 }
 
 img.img-article {
