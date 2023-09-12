@@ -444,8 +444,8 @@ function infoSchoolMobile() {
     const body = document.body
     const html = document.documentElement;
 
-    const height = Math.max(body.scrollHeight, body.offsetHeight,
-        html.clientHeight, html.scrollHeight, html.offsetHeight);
+    // const height = Math.max(body.scrollHeight, body.offsetHeight,
+    //    html.clientHeight, html.scrollHeight, html.offsetHeight);
 
     // Je clique sur icone information
     // removeDisplayNone class display none sur la textBox

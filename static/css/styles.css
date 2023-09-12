@@ -1617,6 +1617,10 @@ article {
     color: #E6E6E6;
 }
 
+article > a {
+    text-decoration: underline;
+}
+
 img.img-article {
     max-width: 80%;
     border-radius: 25px;
